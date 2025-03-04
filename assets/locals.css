@@ -17,6 +17,10 @@
   padding: 1rem;
 }
 
+.mt {
+  margin-top: 4rem;
+}
+
 .blog-body {
   padding: 0 2em;
 }
@@ -31,5 +35,142 @@
 }
 
 .top-quote {
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
+}
+
+.june-jordan {
+  max-width: 100%;
+  white-space: pre-wrap;
+}
+
+.divider {
+  width: 30%;
+  height: 1px;
+  margin: 2rem 0rem;
+  justify-self: center;
+  color: var(--red);
+  background-color: var(--red);
+}
+
+.divider-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.hebrew {
+  text-align: right;
+}
+/* footnote */
+
+p.bottom-footnote {
+  color: var(--teal);
+}
+
+.bottom-link {
+  display: inline-block;
+}
+
+p.bottom-footnote > a:first-child {
+  color: var(--red);
+  font-weight: bolder;
+  position: relative;
+  bottom: 0.5ex;
+  text-decoration: none;
+}
+
+.link-footnote {
+  display: inline-block;
+  color: var(--red);
+  font-weight: bolder;
+  position: relative;
+  bottom: 0.5ex;
+  text-decoration: none;
+}
+
+.link-anchor {
+  position: absolute;
+  transform: translateY(-30vh);
+}
+
+/* rainbow link */
+a.rainbow,
+a.rainbow * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a.rainbow,
+.rainbow:before,
+.rainbow:after {
+  position: relative;
+  outline: none;
+}
+
+a.rainbow {
+  display: inline-block;
+  text-decoration: none;
+}
+
+a.rainbow::before {
+  content: "";
+  position: absolute;
+  visibility: hidden;
+  width: 0%;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+}
+
+a.rainbow:hover::before,
+a.rainbow:focus::before {
+  visibility: visible;
+  width: 100%;
+  transition: visibility, width 0.5s ease-out;
+}
+
+a.rainbow:hover::before,
+a.rainbow:focus::before {
+  background: linear-gradient(
+    315deg,
+    var(--rosewater) 0%,
+    var(--flamingo) 5%,
+    var(--pink) 10%,
+    var(--mauve) 15%,
+    var(--red) 20%,
+    \var(--yellow)25%,
+    var(--green) 30%,
+    var(--teal) 35%,
+    var(--sky) 40%,
+    var(--blue) 45%,
+    var(--lavender) 50%,
+    var(--blue) 55%,
+    var(--sky) 60%,
+    var(--teal) 65%,
+    var(--green) 70%,
+    var(--yellow) 75%,
+    var(--red) 80%,
+    var(--mauve) 85%,
+    var(--pink) 90%,
+    var(--flamingo) 95%
+  );
+  animation: rain_bow 4s linear infinite;
+  background-size: 400% 400%;
+}
+
+@keyframes rain_bow {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  50% {
+    background-position: 100% 100%;
+  }
+
+  100% {
+    background-position: 0% 0%;
+  }
 }
