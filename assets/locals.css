@@ -21,6 +21,11 @@
   margin-top: 4rem;
 }
 
+.bsd {
+  text-align: right;
+  color: var(--rosewater);
+}
+
 .blog-body {
   padding: 0 2em;
 }
