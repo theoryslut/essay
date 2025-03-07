@@ -66,11 +66,23 @@
 }
 
 .hebrew {
+  font-size: 1.5rem;
   text-align: right;
+}
+
+.flamingo {
+  color: var(--flamingo);
 }
 /* footnote */
 
-p.bottom-footnote {
+.hebrew-footnote {
+  color: var(--flamingo);
+  font-size: 1.2rem;
+  text-align: right;
+  margin: 0rem 3rem;
+}
+
+.bottom-footnote {
   color: var(--teal);
 }
 
@@ -78,7 +90,7 @@ p.bottom-footnote {
   display: inline-block;
 }
 
-p.bottom-footnote > a:first-child {
+.bottom-footnote > a:first-child {
   color: var(--red);
   font-weight: bolder;
   position: relative;
